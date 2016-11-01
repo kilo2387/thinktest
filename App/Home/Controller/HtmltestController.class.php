@@ -15,6 +15,9 @@ class HtmltestController extends Controller
     {
         echo 'id是:'.$id;
         echo "<br>今年是:".$year.'年'.$month.'月'.$day.'日';
+        $name = 'jieguangyao';
+        $this->assign('name', $name);
+        $this->assign('time', time());
         $this->display('testarray');
     }
 

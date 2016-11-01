@@ -40,6 +40,8 @@ require THINK_PATH . 'ThinkPHP.php';
 //define('CONF_EXT','.ini');     //配置文件的后缀名
 //define('APP_STATUS','office_config');    //配置状态配置
 //define('COMMON_PATH', './Common');    //重新定义公共模块的位置
+//define('TMPL_PATH', './Template/');   //定义所有模块的模板目录所在
+
 /**
  * define('BIND_MODULE','Admin'); 绑定Admin模块到当前入口文件,自动生成目录
  * define('BIND_CONTROLLER_LIST','Index,User,Menu'); 批量生成控制器

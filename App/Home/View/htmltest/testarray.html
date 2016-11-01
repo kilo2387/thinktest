@@ -63,7 +63,15 @@
 
 </script>
 <body>
-    <div id="myDiv" onmousedown="testClick()">hahaha</div>
+    <div id="myDiv" onmousedown="testClick()">{$name|substr=###,0,3}</div>
+    <div id="2myDiv" onmousedown="testClick()">{:substr(strtoupper(md5($name)),0,3)}</div>
+    <br>{$nickNmae|default='这个默认的名字是揭光耀'}
+    <br>{$time|date='Y-m-d', ###}
+<br>{$Think.const.MODULE_NAME}
+<br>{$Think.config.db_charset}
+<br>{$Think.config.url_model}
+
+
 
 </body>
 </html>

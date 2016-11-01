@@ -39,6 +39,22 @@ return array(
     'VAR_ADDON'     =>  'plugin',   //定义插件控制器
     //'ACTION_BIND_CLASS'     =>  true,   //操作绑定到类
 
+    //'DEFAULT_V_LAYER'   =>  'Template',     //设置默认的视图层名称
+    //'TMPL_TEMPLATE_SUFFIX'  =>  '.tpl',     //设置模板文件的默认后缀
+    //'VIEW_PATH'     =>  './Theme/',     //单独定义某个模块的视图目录
+    //同时定义了TMPL_PATH常量和VIEW_PATH设置参数，那么以当前模块的VIEW_PATH参数设置优先
+    //'DEFAULT_THEME'     =>  'default',      //设置默认的模板主题
+    //设置的模板主题，需要在视图目录下面创建对应的主题目录
+    //'TMPL_FILE_DEPR'    =>  '_',     //模板目录结构 user/read.html -> user_read.html
+    'TMPL_LOAD_DEFAULTTHEME'    =>  true,   //开启差异主题设置
+
+   //'TMPL_L_DELIM'      =>  '{',   //模板的左标签
+   //'TMPL_R_DELIM'      =>  '}',   //模板的右标签
+
+
+
+
+
 
 
 
