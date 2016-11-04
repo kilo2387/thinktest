@@ -48,10 +48,14 @@ return array(
     //'TMPL_FILE_DEPR'    =>  '_',     //模板目录结构 user/read.html -> user_read.html
     'TMPL_LOAD_DEFAULTTHEME'    =>  true,   //开启差异主题设置
 
-   //'TMPL_L_DELIM'      =>  '{',   //模板的左标签
-   //'TMPL_R_DELIM'      =>  '}',   //模板的右标签
+    //'TMPL_L_DELIM'      =>  '{',   //模板的左标签
+    //'TMPL_R_DELIM'      =>  '}',   //模板的右标签
 
-
+    //'DATA_CACHE_TYPE'       =>  'Memcache',   //设置缓存的类型
+    //'DATA_CACHE_PATH'       =>  TEMP_PATH,    //设置缓存的路径，仅对File类缓存有效
+    //'DATA_CACHE_PREFIX'     =>  '',  //缓存的前缀
+    'MEMCACHE_HOST'     => 'tcp://127.0.0.1:11211',
+    'DATA_CACHE_TIME'   =>  5,
 
 
 
