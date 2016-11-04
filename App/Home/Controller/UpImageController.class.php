@@ -7,29 +7,22 @@
  */
 
 namespace Home\Controller;
+use Home\Logic\Image;
 use Think\Controller;
 
 class UpImageController extends Controller
 {
 
-    //处理文件上传
+
+    /**
+     * 处理文件上传
+     * class Image 图片上传的封装类(未完整)
+     */
     public function uploadAction()
     {
-        $source_path =  substr($_SERVER['SCRIPT_FILENAME'],0 ,-9);
-        $storeFolder = C('UPLOAD_PATH');
-
-        $ret = ['status'=>0, 'msg'=>'', 'data'=> ''];
-        if(isset($_FILES['file']['name'])) {
-            $tempFile = $_FILES['file']['tmp_name'];          //3
-            $targetFile =  $source_path . $storeFolder. time() .'_'.$_FILES['file']['name'];  //5
-            echo $targetFile;
-            if(move_uploaded_file($tempFile,$targetFile)){
-                $ret['status'] = 1;
-                $ret['msg'] = '上传图片成功';
-                $ret['data'] = $targetFile;
-            }
-            $ret = json_encode($ret);
-            echo $ret;
+        if($_FILES){
+            $up_model = new Image();
+            $up_model->save();
         }
 
 //        $upload = new \Think\Upload();// 实例化上传类a
@@ -55,11 +48,13 @@ class UpImageController extends Controller
 
         $this->display();
     }
-    public function form()
-    {
-        dump($_POST);
+
+    public function headPhotoAction(){
+
+        if(IS_POST){
+            $head_model = new Image();
+            $head_model->save();
+        }
+        $this->display();
     }
-
-
-
 }

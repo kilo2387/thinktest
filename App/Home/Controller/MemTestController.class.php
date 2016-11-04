@@ -41,4 +41,8 @@ class MemTestController extends Controller
             echo '没有name这个值';
         }
     }
+
+    public function listAction(){
+
+    }
 }
