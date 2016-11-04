@@ -14,6 +14,11 @@
 </body>
 </html>
 <script>
+
+    /**
+     * 简单利用Dropzone实现的图片上传功能
+     * @type {boolean}
+     */
     Dropzone.autoDiscover = false;
     var dropz = new Dropzone("#dropz",{
         url : 'upload',
@@ -21,6 +26,4 @@
         maxFilesize : 512,
         acceptedFiles : ".jpg"
     });
-
-
 </script>
