@@ -56,6 +56,7 @@ return array(
     //'DATA_CACHE_PREFIX'     =>  '',  //缓存的前缀
     'MEMCACHE_HOST'     => 'tcp://127.0.0.1:11211',
     'DATA_CACHE_TIME'   =>  5,
+    'UPLOAD_PATH'   =>  'upload/',
 
 
 
