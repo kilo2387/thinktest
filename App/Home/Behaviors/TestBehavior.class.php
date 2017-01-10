@@ -13,12 +13,12 @@ class TestBehavior extends Behavior
 {
     //行为扩展的执行入口必须是run
     public function run(&$params)
+{
+    if(C('TEST_PARAM'))
     {
-        if(C('TEST_PARAM'))
-        {
-            echo 'RUNTEST BEHAVIOR '.$params;
-        }else{
-            echo 'RUNTEST BEHAVIOR isn\'t define';
-        }
+        echo 'RUNTEST BEHAVIOR '.$params;
+    }else{
+        echo 'RUNTEST BEHAVIOR isn\'t define';
     }
+}
 }

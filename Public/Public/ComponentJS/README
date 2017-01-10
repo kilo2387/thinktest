@@ -1,0 +1,101 @@
+
+    ComponentJS -- Component System for JavaScript <http://componentjs.com>
+    Copyright (c) 2009-2016 Ralf S. Engelschall <http://engelschall.com>
+
+    License
+    =======
+
+    This Source Code Form is subject to the terms of the Mozilla Public
+    License (MPL), version 2.0. If a copy of the MPL was not distributed
+    with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+    Elevator Pitch
+    ==============
+
+    ComponentJS is a stand-alone MPL-licensed Open Source library
+    for JavaScript, providing a powerful Component System for
+    hierarchically structuring the User-Interface (UI) dialogs of
+    complex HTML5-based Rich Clients (aka Single-Page-Apps) — under
+    maximum applied Separation of Concerns (SoC) architecture principle,
+    through optional Model, View and Controller component roles, with
+    sophisticated hierarchical Event, Service, Hook, Model, Socket and
+    Property mechanisms, and fully independent and agnostic of the
+    particular UI widget toolkit.
+
+    Installing
+    ==========
+
+    You can conveniently get build versions of ComponentJS:
+
+    - either install as a client component via the Bower component manager:
+
+      # install the latest version
+      $ bower install componentjs
+
+      # install a particular version
+      $ bower install "componentjs#1.0.0"
+
+    - or download only the main file from the repository:
+
+      # install the latest version
+      $ curl -O https://raw.github.com/rse/componentjs-build/master/component.js
+
+      # install a particular version
+      $ curl -O https://raw.github.com/rse/componentjs-build/1.0.0/component.js
+
+    Building
+    ========
+
+    The ComponentJS build process is based on Grunt. The following Unix
+    tools have to be installed for this. The ComponentJS author uses an
+    OpenPKG-based software-stack for this.
+
+    Mandatory
+    ---------
+
+    - Node [node, npm]
+      http://nodejs.org/
+      (for the run-time of Grunt)
+
+    - Grunt [grunt]
+      http://gruntjs.com/
+      (for executing the individual build steps)
+
+    Optional
+    --------
+
+    - GNU Make [make]
+      http://www.gnu.org/software/shtool/
+      (for using the convenient build targets in Makefile)
+
+    - Google Closure Compiler [closure-compiler]
+      http://code.google.com/closure/compiler/
+      (for additionally linting the sources)
+
+    - Google Closure Linter [gjslint]
+      http://code.google.com/p/closure-linter/
+      (for additionally linting the sources)
+
+    - W3M [w3m]
+      http://w3m.sourceforge.net/
+      (for creating the text format variant of the API documentation)
+
+    - PrinceXML [prince]
+      http://www.princexml.com/
+      (for creating the PDF format variant of the API documentation)
+
+    - GNU Tape Archiver [tar]
+      http://www.gnu.org/software/tar/
+      (for creating the release/snapshot distribution tarballs)
+
+    - GNU Portable Shell Tool [shtool]
+      http://www.gnu.org/software/shtool/
+      (for creating the release/snapshot distribution tarballs)
+
+    Continuous Integration
+    ======================
+
+    On each change, the ComponentJS sources are automatically built and the regression
+    test suite run on the Travis Continous Integration (CI) service. The latest
+    build status can be found under https://travis-ci.org/rse/componentjs
+

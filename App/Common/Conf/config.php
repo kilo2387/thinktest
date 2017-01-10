@@ -16,8 +16,8 @@ return array(
     /**
      * 模块化设计
      */
-    'DEFAULT_MODULE'        =>  'Home',     //默认模块
-    'MODULE_ALLOW_LIST'     =>  array('Home','Admin'),  //允许的模块
+    'DEFAULT_MODULE'        =>  'Wechat',     //默认模块
+    'MODULE_ALLOW_LIST'     =>  array('Home','Admin', 'Wechat'),  //允许的模块
     //'LOAD_EXT_CONFIG'       =>  'user,db',    //扩展配置,默认情况下设置的参数会并入项目中
     'MODULE_DENY_LIST'      =>  array('Common','Runtime','Api'),    // 设置禁止访问的模块列表,一般只用于内部访问的
     //'MULTI_MODULE'          =>  false,  //关闭多模块访问
